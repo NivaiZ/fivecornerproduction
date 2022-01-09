@@ -1,6 +1,6 @@
 [Демо проекта](https://nivaiz.github.io/fivecornerproduction/build)
 
-Вёрстка: [Илья Галятдинов](https://github.com/andreysgra/)
+Вёрстка: [Илья Галятдинов](https://github.com/NivaiZ/)
 
 ## Как использовать
 
