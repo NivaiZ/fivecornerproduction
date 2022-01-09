@@ -1,0 +1,27 @@
+.link {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    gap: 41px;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 132px;
+    margin-left: 11px;
+  }
+}
+
+.link__item--fourth {
+  @media (min-width: @desktop-width) {
+    padding-left: 251px;
+  }
+}
+
+.link__item {
+  @media (min-width: @desktop-width) {
+    text-decoration: none;
+    color: @medium--light-gray;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}

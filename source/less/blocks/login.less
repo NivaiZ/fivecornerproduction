@@ -1,0 +1,26 @@
+.login__icon {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.login__button {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    border: none;
+    background-color: @white--basic;
+  }
+}
+
+.login {
+  @media (min-width: @desktop-width) {
+    grid-column: ~"4/-1";
+    padding-left: 50px;
+    justify-content: flex-end;
+  }
+}

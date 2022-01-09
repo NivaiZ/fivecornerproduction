@@ -1,0 +1,82 @@
+.search-header {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  height: 42px;
+}
+
+.search-header__enter {
+  height: 42px;
+  width: 0;
+  padding: 0 42px 0 15px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  background: transparent;
+  transition: .4s cubic-bezier(0, 0.8, 0, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+
+  &:focus {
+    width: 300px;
+    z-index: 1;
+    border-bottom: 2px solid @medium--light-gray;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: static;
+    z-index: 0;
+    background-image: none;
+    width: 250px;
+    border-bottom: 1px solid @medium--light-gray;
+    outline: none;
+    padding-top: 9px;
+    margin-left: 40px;
+    cursor: pointer;
+    display: block;
+  }
+}
+
+.search-header__click {
+  background-image: url("../img/searchphone.svg");
+  background-repeat: no-repeat;
+  background-color: @white--basic;
+  border: none;
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+
+  &:focus {
+    content: "";
+    font-size: 16px;
+    color: @light--grey;
+  }
+}
+
+.search-header::placeholder {
+  display: flex;
+  color: @medium--light-gray;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+input.search-header__enter:hover::placeholder {
+  color: @black--basic;
+}
+
+.search-header__enter input:hover:-webkit-input-placeholder {
+  color: @black--basic;
+}
+
+.search-header__enter input:hover:-moz-placeholder {
+  color: @black--basic;
+}
+
+.search-header__enter input:hover:-ms-input-placeholder {
+  color: @black--basic;
+}

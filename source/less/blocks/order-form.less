@@ -1,0 +1,243 @@
+.order-form__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+
+  @media (min-width: @desktop-width) {
+    grid-column: ~"1/-2";
+    margin-right: 50px;
+    margin-top: 20px;
+  }
+}
+
+.order-form__information {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid @medium--light-gray;
+  resize: none;
+
+  @media (min-width: @desktop-width) {
+    cursor: pointer;
+  }
+}
+
+.order-form__information:focus:invalid,
+.order-form__information:not(:placeholder-shown):not(:focus):invalid {
+  color: @dark--red;
+  border-color: @dark--red;
+}
+
+.order-form__map {
+  margin-bottom: 24px;
+
+  @media (min-width: @desktop-width) {
+    grid-column: ~"2/2";
+    grid-row: ~"10/-1";
+    margin-bottom: 34px;
+  }
+}
+
+.order-form__sign {
+  font-size: 12px;
+  line-height: 14px;
+  color: @medium--light-gray;
+}
+
+.order-form__signature {
+  font-size: 16px;
+  color: @medium--light-gray;
+}
+
+.order-form__packing {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid @medium--light-gray;
+  font-size: 16px;
+  line-height: 120%;
+
+  color: @medium--light-gray;
+  appearance: none;
+  background: url("../img/arrowmobile.svg") no-repeat right center;
+  outline: 0;
+
+  @media (min-width: @desktop-width) {
+    cursor: pointer;
+
+    &:hover {
+      color: @black--basic;
+    }
+  }
+}
+
+.order-form__heading {
+
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.order-form__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: url("../img/giftmobile.jpg") no-repeat;
+  margin-top: 32px;
+  border-bottom: 1px solid @light--grey;
+  padding-bottom: 16px;
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    grid-column: ~"2/-3";
+    margin-right: 49px;
+    background: url("../img/giftdesk.jpg") no-repeat;
+    grid-template-columns: 0.4fr 0.5fr;
+  }
+}
+
+.order-form__link {
+  grid-column: ~"3/-1";
+  text-decoration: none;
+  border: none;
+  background-color: @white--basic;
+  color: @medium--light-gray;
+}
+
+.order-form__price {
+  grid-column: ~"3/-1";
+  font-size: 16px;
+  line-height: 18px;
+
+  font-weight: 700;
+}
+
+.order-form__name {
+  grid-column: ~"2/-1";
+  font-size: 16px;
+  line-height: 18px;
+
+  font-weight: 700;
+}
+
+.order-form__extra {
+  grid-column: ~"2/-1";
+  width: 81px;
+  height: 34px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  padding-top: 6px;
+  padding-left: 35px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: url("../img/minusphone.svg");
+    top: 5px;
+    left: 0;
+    width: 12px;
+  }
+
+  &::before {
+    position: absolute;
+    content: url("../img/plusmobile.svg");
+    width: 12px;
+    top: 5px;
+    right: 0;
+  }
+}
+
+.order-form__more {
+  right: 0;
+  position: absolute;
+  border: none;
+  background-color: @white--basic;
+}
+
+.order-form__less {
+  border: none;
+  background-color: @white--basic;
+  position: absolute;
+  left: 0;
+}
+
+.order-form__figure {
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.order-form__over {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (min-width: @desktop-width) {
+    background: @black--basic;
+    opacity: 0.8;
+    color: @white--basic;
+    position: absolute;
+    right: 0;
+    bottom: 264px;
+    min-width: 555px;
+    padding-bottom: 10px;
+  }
+}
+
+.order-form__cost {
+
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 700;
+
+  @media (min-width: @desktop-width) {
+    font-size: 40px;
+    line-height: 46px;
+  }
+}
+
+.order-form__total {
+
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 700;
+
+  @media (min-width: @desktop-width) {
+    font-size: 40px;
+    line-height: 46px;
+  }
+}
+
+.order-form__post {
+  text-decoration: none;
+  background-color: @white--basic;
+  width: 288px;
+  border: 1px solid @black--basic;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  line-height: 23px;
+
+  font-weight: 700;
+
+  &:hover {
+    background: @black--basic;
+    color: @white--basic;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    grid-column: ~"1/-2";
+    cursor: pointer;
+    padding-bottom: 25px;
+    margin-top: 25px;
+  }
+}
+
+.order-form {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+  }
+}

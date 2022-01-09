@@ -1,0 +1,49 @@
+.page-header__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.page-header__search {
+  width: 22px;
+  height: 22px;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+
+    &::after {
+      position: absolute;
+      content: url("../img/searchdesk.svg");
+    }
+  }
+}
+
+.page-header__content {
+  margin-right: 16px;
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.page-header__like {
+  border: none;
+  background-color: @white--basic;
+}
+
+.page-header__logo {
+  @media (min-width: @desktop-width) {
+    margin-right: 108px;
+    margin-top: 18px;
+  }
+}

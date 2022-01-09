@@ -1,0 +1,30 @@
+.basket__link {
+  &::after {
+    position: absolute;
+    content: "";
+    background: #000000;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: -7px;
+    top: 0;
+  }
+}
+
+.basket__figure {
+  position: absolute;
+  top: -12px;
+  z-index: 2;
+  right: -2px;
+  color: @white--basic;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.basket {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    justify-content: end;
+    grid-column: ~"6/6";
+  }
+}
