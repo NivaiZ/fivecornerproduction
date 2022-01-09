@@ -1,4 +1,4 @@
-[Демо проекта](https://nivaiz.github.io/fivecornertest/build/)
+[Демо проекта](https://nivaiz.github.io/fivecornerproduction/build)
 
 Вёрстка: [Илья Галятдинов](https://github.com/andreysgra/)
 
