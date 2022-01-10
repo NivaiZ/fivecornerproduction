@@ -123,13 +123,20 @@
     <section class="order">
       <form class="order-form" action="#" id="orderForm" method="post">
         <div class="order-form__wrapper">
-          <label class="order-form__sign" for="address">Адрес</label>
-          <textarea class="order-form__information" id="address" name="address-text" placeholder=" " required></textarea>
+          <label class="order-form__sign" for="suggest">Адрес</label>
+          <textarea class="order-form__information" id="suggest" name="suggest-text" placeholder=" "
+            required></textarea>
         </div>
+
 
         <div class="order-form__map map" id="map">
           <div class="map__parametr" id="mapAddress">
-          <script src="https://api-maps.yandex.ru/2.1/?apikey=c0183649-9564-47e9-a344-5e6d830db0fc&lang=ru_RU"></script>
+            <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=c0183649-9564-47e9-a344-5e6d830db0fc">
+            </script>
+            <div class="order-form__over">
+              <p class="order-form__total">Итог:</p>
+              <p class="order-form__cost">3790 руб.</p>
+            </div>
           </div>
         </div>
 
@@ -140,7 +147,8 @@
 
         <div class="order-form__wrapper">
           <label class="order-form__signature" for="phone">Ваш Телефон</label>
-          <input class="order-form__information order-form__script" type="text" id="phone" name="phone-text" placeholder=" " required>
+          <input class="order-form__information order-form__script" type="text" id="phone" name="phone-text"
+            placeholder=" " required>
         </div>
 
         <div class="order-form__wrapper">
@@ -165,28 +173,33 @@
         <h2 class="order-form__heading">Выбранные товары:</h2>
         <div class="order-form__inner">
           <p class="order-form__name">Товар 1</p>
+          <div class="order-form__description">
+            <p class="order-form__text order-form__text--first">Описание товара, которое может быть длинным</p>
+          </div>
           <p class="order-form__price">1090 руб.</p>
           <p class="order-form__extra"><span class="order-form__figure">1</span></p>
           <button class="order-form__link" type="button">Удалить</button>
         </div>
         <div class="order-form__inner">
           <p class="order-form__name">Товар 2</p>
+          <div class="order-form__description">
+            <p class="order-form__text">Описание товара, которое может быть очень-очень длинным</p>
+          </div>
           <p class="order-form__price">700 руб.</p>
           <p class="order-form__extra"><span class="order-form__figure">1</span></p>
           <button class="order-form__link" type="button">Удалить</button>
         </div>
         <div class="order-form__inner">
           <p class="order-form__name">Товар 3</p>
+          <div class="order-form__description">
+            <p class="order-form__text">Короткое описание товара</p>
+          </div>
           <p class="order-form__price">2000 руб.</p>
           <p class="order-form__extra"><span class="order-form__figure">2</span>
             <button class="order-form__more visually-hidden" type="button">+</button>
             <button class="order-form__less visually-hidden" type="button">-</button>
           </p>
           <button class="order-form__link" type="button">Удалить</button>
-        </div>
-        <div class="order-form__over">
-          <p class="order-form__total">Итог:</p>
-          <p class="order-form__cost">3790 руб.</p>
         </div>
         <button class="order-form__post" id="sendData" type="submit">Купить</button>
       </form>
@@ -196,6 +209,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.12.0/dist/js/jquery.suggestions.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.js"></script>
+  <script src="direct_geocode.js"></script>
   <script src="js/script.min.js"></script>
 </body>
 
