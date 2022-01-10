@@ -1,6 +1,6 @@
 .search-header {
   position: relative;
-  width: 300px;
+  width: 80px;
   margin: 0 auto;
   height: 42px;
 }
@@ -55,6 +55,9 @@
     content: "";
     font-size: 16px;
     color: @light--grey;
+  }
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
 

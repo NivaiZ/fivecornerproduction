@@ -42,7 +42,7 @@
       <div class="page-header__content">
         <form action="https://echo.htmlacademy.ru" method="get" class="page-header__search search-header">
           <input class="search-header__enter" type="search" placeholder="Поиск">
-          <button class="search-header__click visually-hidden" type="submit"></button>
+          <button class="search-header__click" type="submit"></button>
         </form>
       </div>
 
@@ -128,12 +128,11 @@
             required></textarea>
         </div>
 
-
         <div class="order-form__map map" id="map">
           <div class="map__parametr" id="mapAddress">
             <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=c0183649-9564-47e9-a344-5e6d830db0fc">
             </script>
-            <div class="order-form__over">
+            <div class="order-form__over order-form__over--map">
               <p class="order-form__total">Итог:</p>
               <p class="order-form__cost">3790 руб.</p>
             </div>
@@ -200,6 +199,10 @@
             <button class="order-form__less visually-hidden" type="button">-</button>
           </p>
           <button class="order-form__link" type="button">Удалить</button>
+        </div>
+        <div class="order-form__altogether">
+          <p class="order-form__total">Итог:</p>
+          <p class="order-form__cost">3790 руб.</p>
         </div>
         <button class="order-form__post" id="sendData" type="submit">Купить</button>
       </form>

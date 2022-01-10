@@ -185,6 +185,24 @@
   }
 }
 
+.order-form__over--map {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+.order-form__altogether {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
 .order-form__cost {
 
   font-size: 26px;
@@ -212,7 +230,7 @@
 .order-form__post {
   text-decoration: none;
   background-color: @white--basic;
-  width: 288px;
+  width: 100%;
   border: 1px solid @black--basic;
   box-sizing: border-box;
   padding-top: 20px;
@@ -245,6 +263,8 @@
 }
 
 .order-form__description {
+  display: contents;
+
   @media (min-width: @desktop-width) {
     grid-column: ~'-2/-1';
     width: 153px;
